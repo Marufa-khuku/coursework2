@@ -1,0 +1,30 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.banner-text {
+  flex: 1;
+  min-width: 300px;
+}
+.banner-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.banner-text p {
+  color: #555;
+  max-width: 500px;
+}
+.banner-img {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+}
