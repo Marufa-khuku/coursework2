@@ -29,7 +29,7 @@
   }
 }
   
-
+/*Plants */
 
 
 .plants {
@@ -69,5 +69,49 @@
 @media (max-width: 768px) {
   .plant-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*plant */
+
+.plant-lover {
+  padding: 50px 20px;
+}
+.lover-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.lover-image-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+.trusted-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.lover-content {
+  flex: 1;
+  min-width: 300px;
+}
+.lover-content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+@media (max-width: 768px) {
+  .lover-container {
+    flex-direction: column;
+  }
+  .trusted-badge {
+    display: none;
   }
 }
